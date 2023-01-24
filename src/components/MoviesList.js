@@ -8,7 +8,8 @@ function MoviesList({ movies }) {
     </li>
   ));
 
-  return <ul>{renderMovies}</ul>;
+  return <ul>{renderMovies}</ul>
 }
 
 export default MoviesList;
+

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function NavBar({currentRoute}) {
   return (
     <div
       style={{
@@ -10,10 +10,10 @@ function NavBar() {
         marginBottom: "12px",
       }}
     >
-      <NavLink style={{ marginRight: "10px" }} to="/">
+      <NavLink style={{ marginRight: "10px" }} to="/" activeClassName={currentRoute === 'home' ? 'active' : ''}>
         Home
       </NavLink>
-      <NavLink style={{ marginRight: "10px" }} to="/movies">
+      <NavLink style={{ marginRight: "10px" }} to="/movies" activeClassName={currentRoute === 'movies' ? 'active' : ''}>
         Movies
       </NavLink>
     </div>
